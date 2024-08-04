@@ -1,90 +1,138 @@
-<!DOCTYPE html>
-<head>
-<meta charset="UTF-8">
-<title>こんぶ</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="テストテスト">
-<meta name="keywords" content="こんぶ">
-</head>
-<body>
-<div id="container">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #ffffff;
-            color: #000000;
-            padding: 20px;
-            text-align: center;
-        }
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
-        }
-        .product {
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 20px;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-        }
-        .product img {
-            max-width: 200px;
-            margin-right: 20px;
-        }
-        .product-description {
-            flex-grow: 1;
-        }
-    </style>
-<header>
-    <h1>こんぶのホームページ</h1>
-<aside id="mainimg"><img src="https://konomi-tokyo-metal.vercel.app/konomi.png" alt=""></aside>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ScJPマイクラ鯖-ホーム-</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-3 fw-bold text-dark px-3" href="#">ScJPマイクラ鯖</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item fs-5 fw-bold">
+                <a class="nav-link active" aria-current="page" href="index.html">ホーム</a>
+              </li>
+              <li class="nav-item fs-5 fw-bold">
+                <a class="nav-link" aria-current="page" href="region.html">地域情報</a>
+              </li>
+              <li class="nav-item fs-5 fw-bold">
+                <a class="nav-link" aria-current="page" href="sisetu.html">施設情報</a>
+              </li>
+              <li class="nav-item fs-5 fw-bold">
+                <a class="nav-link" aria-current="page" href="tetudou.html">鉄道情報</a>
+              </li>
+              <li class="nav-item fs-5 fw-bold">
+                <a class="nav-link" aria-current="page" href="boshu.html">募集情報</a>
+              </li>
+              <li class="nav-item fs-5 fw-bold">
+                <a class="nav-link" aria-current="page" href="saba.html">サーバー情報</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- hero -->
+      <div class="px-4 py-2 my-5 text-center">
+        <h1 class="display-5 fw-bold text-body-emphasis fw-bold">ようこそScJPマイクラ鯖へ！</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4 fw-bold">ScJPマイクラ鯖は、設備やルールなどが充実した、愉快でフレンドリーなScratchJPユーザーが集う、Minecraftサーバーです！新規さん大歓迎🎉🎉🎉</p>
+        </div>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3" onclick="location.href='https://discord.com/channels/888638910589206569/1220479513071190077'" >ホワイトリスト申請</button>
+        </div>
+      </div>
+      <!-- info -->
+      <div class="text-center">
+        <div class="col-lg-7 mx-auto py-4">
+          <h1>新着情報&お知らせ</h1>
+          <div class="py-3"></div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item py-2 fs-5">募集情報のページを開設しました！(2024/3/31)</li>
+            <li class="list-group-item py-2 fs-5">「施設情報」から施設情報の登録をお願いします！(2024/3/28)</li>
+            <li class="list-group-item py-2 fs-5">サイト公開🎉(2024/3/27)</li>
+          </ul>
+        </div>
+      </div>
+      <!-- hoge -->
+      <div class="text-center py-5">
+        <div class="col-lg-7 mx-auto px-1">
+          <h1>鯖内の情報</h1>
+          <div class="py-3"></div>
+          <div class="row">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">地域情報</h5>
+                  <p class="card-text">鯖内の地域情報を掲載しています。</p>
+                  <a href="region.html" class="btn btn-primary">地域情報</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">施設情報</h5>
+                  <p class="card-text">鯖内の施設情報を掲載しています。</p>
+                  <a href="sisetu.html" class="btn btn-primary">施設情報</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row py-3">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">鉄道情報</h5>
+                  <p class="card-text">鯖内の鉄道情報を掲載しています。</p>
+                  <a href="tetudou.html" class="btn btn-primary">鉄道情報</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">募集情報</h5>
+                  <p class="card-text">鯖内の募集情報を掲載しています。</p>
+                  <a href="saba.html" class="btn btn-primary">サーバー情報</a>
+                </div>
+              </div>
+              <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">サーバーについて</h5>
+                  <p class="card-text">SCJPマイクラ鯖に関する情報を掲載しています。</p>
+                  <a href="saba.html" class="btn btn-primary">サーバー情報</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-<section>
-
-<h2>自己紹介</h2>
-  
-<p>なんか喋ってる海藻。</p><br>
-    <p>プロキシとか作ってたり</p>
-<img src="https://www.rt-shop.jp/blog/wp-content/uploads/2013/06/P1060595.jpg"><br>
-    <img src="https://www.rt-shop.jp/blog/wp-content/uploads/2013/06/R0011570.jpg"><br>
-    <br>
-    <h3>以下はこの会社で取り扱っている商品の一部です。</h3>
-       <div class="container">
-        <div class="product">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmUECTcCCYO7kOU8Tgo-W4IoizBq9vyhrXNg&s" alt="小ねじ類">
-            <div class="product-description">
-                <h2>小ネジ類</h2>
-                <p>小ねじ類は種類によって値段は変わりますが、このみ東京金属工業株式会社は最安値です。</p>
-                <p>価格: 鉄（＋）ナベ小ねじM2x2クロメートが 100個入で390円</p>
-            </div>
-        </div>
-        <div class="product">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWfWXtBhtO3khH0LTHaiZ0hsnYg-XxBxX4bA&s" alt="ドリルねじ">
-            <div class="product-description">
-                <h2>ドリルねじ類</h2>
-                <p>ドリルねじ類の値段は比較的安く提供いたします</p>
-                <p>価格:ドリルネジ(シンワッシャー)が100個入で1350円</p>
-            </div>
-        </div>
-        <div class="product">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfG-p_GRsX_QeGiky919IOzOXojc4KJTz5Vw&s" alt="ナット">
-            <div class="product-description">
-                <h2>ナット類</h2>
-                <p>ナットは様々な種類を扱っております。</p>
-                <p>価格: 六角ナット1種(鉄/ユニクローム)が100個入で1500円</p>
-            </div>
-        </div>
-    </div>
-    <a href="/contact.html"><h3>購入やお問い合わせ</h3></a>
-    <br><br>
-    <footer>
-<small><a href="https://twitter.com/KonoMi_Tokyo">このみ東京金属工業株式会社</a> ｜ </a>制作:�東�京�</small><br>
-    </footer>
-</body>
-    </html>
+      <!-- footer -->
+      <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item fw-bold fs-5"><a href="index.html" class="nav-link px-2 text-body-secondary">ホーム</a></li>
+            <li class="nav-item fw-bold fs-5"><a href="region.html" class="nav-link px-2 text-body-secondary">地域情報</a></li>
+            <li class="nav-item fw-bold fs-5"><a href="sisetu.html" class="nav-link px-2 text-body-secondary">施設情報</a></li>
+            <li class="nav-item fw-bold fs-5"><a href="tetudou.html" class="nav-link px-2 text-body-secondary">鉄道情報</a></li>
+            <li class="nav-item fw-bold fs-5"><a href="saba.html" class="nav-link px-2 text-body-secondary">サーバー情報</a></li>
+          </ul>
+          <p class="text-center text-body-secondary fw-bold fs-5">SCJPマイクラ鯖</p>
+        </footer>
+      </div>
+      <!-- /中央揃えのフッタ -->
+      
+      <div class="b-example-divider"></div>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
